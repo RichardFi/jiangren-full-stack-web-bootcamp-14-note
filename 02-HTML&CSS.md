@@ -44,7 +44,7 @@
 - 流量高
 
 ### 11. HTML tag分为两种: 各种标签可以在w3school和MDN搜索到，使用正确的标签对SEO有益
-- block element: <div> <header> <main> 等
+- block element: `<div> <header> <main>`
     - i: 占据整行
     - ii: 上下有空间
 
@@ -54,25 +54,25 @@
 
 ### 12. 常用tag:
 - h1, h2, h3, h4, h5, h6: h1每个配置里只能有一个，有层级关系，需要依次使用，不能挑选使用，搜索引擎SEO会注重这一点
-- <p>: Paragraph 很常用
-- <b> <strong> <i> <em> <mark> <small> <del> <ins>: Text - Format element格式调整，但大多标签最好不使用，因为在不同浏览器中可能有不同效果，因此要用css实现。除<strong>有语义以外。
-- <br>: 换行
-- <span>: 可使用span圈中某部分，再用css添加效果，本身不带有style
-- <ul><ol><li>: list标签。ul (unsorted list) ol (ordered list)。会在navigation bar中使用
-- <table>: 表。一般不会直接用html写，会通过React等framework写。
-- <div>: default block element
-- <a>: Link。包含target，_blank在新标签页打开
-- <img>: 图片。要加alt，对图片的描述。可以用height width调整，但更多要用CSS调整。建议技巧：将图片作为一个background-image放在一个<div>中。
-- <form> <input> <select> <textarea>: 不再在html中使用，通过JavaScript异步实现。<input>要对应一个<label>会在测试中使用。
-- HTML5 <input>: require, type可以对input的内容制定输入规则
-- <audio> <video>: 很少使用通过html做，播放音乐，视频。
-- <!— —>: comment，主要用于解释一些比较复杂的business logic
+- `<p>`: Paragraph 很常用
+- `<b> <strong> <i> <em> <mark> <small> <del> <ins>`: Text - Format element格式调整，但大多标签最好不使用，因为在不同浏览器中可能有不同效果，因此要用css实现。除`<strong>`有语义以外。
+- `<br>`: 换行
+- `<span>`: 可使用span圈中某部分，再用css添加效果，本身不带有style
+- `<ul> <ol> <li>`: list标签。ul (unsorted list) ol (ordered list)。会在navigation bar中使用
+- `<table>`: 表。一般不会直接用html写，会通过React等framework写。
+- `<div>`: default block element
+- `<a>`: Link。包含target，_blank在新标签页打开
+- `<img>`: 图片。要加alt，对图片的描述。可以用height width调整，但更多要用CSS调整。建议技巧：将图片作为一个background-image放在一个<div>中。
+- `<form> <input> <select> <textarea>`: 不再在html中使用，通过JavaScript异步实现。<input>要对应一个<label>会在测试中使用。
+- `HTML5 <input>`: require, type可以对input的内容制定输入规则
+- `<audio> <video>`: 很少使用通过html做，播放音乐，视频。
+- `<!— —>`: comment，主要用于解释一些比较复杂的business logic
 - caniuse.com：Browser Compatibility。查询哪些浏览器支持哪些tag。
 
 ### 13. File path 文件路径:
-- ../ （相对路径）退到上一层目录
-- ./ （相对路径）当前目录
-- /（绝对路径）从root开始
+- `../` （相对路径）退到上一层目录
+- `./` （相对路径）当前目录
+- `/`（绝对路径）从root开始
 - 绝对路径使用更多
 
 ### 面试：
@@ -90,8 +90,8 @@ coding test：programing面试一定要和面试官交流，无论是不是pair 
 
 ### 3. CSS如何和HTML写到一起：
 - inline style: HTML tag中有个style的attribute，可以在style中写。但杂糅了HTML和CSS，难维护，无法复用，最不推荐。
-- 在head中加<style>，也是杂糅HTML和CSS
-- 在head中加<Link>，link到CSS文件，在HTML读取tag时会读取到相应CSS信息，最推荐做法。
+- 在head中加`<style>`，也是杂糅HTML和CSS
+- 在head中加`<Link>`，link到CSS文件，在HTML读取tag时会读取到相应CSS信息，最推荐做法。
 
 ### 4. CSS selector:
 - Simple selector: 元素类型, class, id. class可以多次使用，id只能用一次。
@@ -100,16 +100,16 @@ coding test：programing面试一定要和面试官交流，无论是不是pair 
 - universal (*)全局 可能被覆写。Descendant。Child。 
 
 ### 5. block element的盒子模型
-- padding是指与边缘的距离
-- border边缘
-- margin与其他元素的距离
+- `padding`是指与边缘的距离
+- `border`边缘
+- `margin`与其他元素的距离
 
 ### 6. units
-- px 像素是一种绝对单位，指定的值不会变化
-- % 相对单位，会在responsive中用到
-- vh vw占视窗的大小
-- auto 0 很早之前水平居中等使用
-- em rem 基于字体大小，em继承父元素大小，rem直接找到最原始的大小
+- `px` 像素是一种绝对单位，指定的值不会变化
+- `%` 相对单位，会在responsive中用到
+- `vh vw`占视窗的大小
+- `auto 0` 很早之前水平居中等使用
+- `em rem` 基于字体大小，em继承父元素大小，rem直接找到最原始的大小
 
 ### 7. normalize.css 用于初始化所有css，会在开发中导入，避免出现浏览器差异。
 
